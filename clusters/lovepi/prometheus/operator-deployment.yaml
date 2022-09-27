@@ -10,7 +10,7 @@ metadata:
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: 0.59.2
   name: prometheus-operator
-  namespace: default
+  namespace: monitoring
   resourceVersion: "5872"
   uid: eb48d813-174e-4c5e-8083-b11286470254
 spec:
