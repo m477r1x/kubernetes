@@ -1,18 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2022-09-27T15:01:58Z"
-  generation: 1
   labels:
     app.kubernetes.io/component: controller
     app.kubernetes.io/name: prometheus-operator
     app.kubernetes.io/version: 0.59.2
   name: prometheus-operator
   namespace: monitoring
-  resourceVersion: "5872"
-  uid: eb48d813-174e-4c5e-8083-b11286470254
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -74,22 +68,3 @@ spec:
       serviceAccount: prometheus-operator
       serviceAccountName: prometheus-operator
       terminationGracePeriodSeconds: 30
-status:
-  availableReplicas: 1
-  conditions:
-  - lastTransitionTime: "2022-09-27T15:02:10Z"
-    lastUpdateTime: "2022-09-27T15:02:10Z"
-    message: Deployment has minimum availability.
-    reason: MinimumReplicasAvailable
-    status: "True"
-    type: Available
-  - lastTransitionTime: "2022-09-27T15:01:58Z"
-    lastUpdateTime: "2022-09-27T15:02:10Z"
-    message: ReplicaSet "prometheus-operator-7856578894" has successfully progressed.
-    reason: NewReplicaSetAvailable
-    status: "True"
-    type: Progressing
-  observedGeneration: 1
-  readyReplicas: 1
-  replicas: 1
-  updatedReplicas: 1
