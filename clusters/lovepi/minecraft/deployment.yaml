@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: minecraft-server-pi
+  namespace: minecraft
   annotations:
     kubesailEditorUid: 32572248-9102-4fe9-8d20-f2bbd10b4487
     kubesail.com/template: loopDelicious/minecraft-raspberry-pi:v25
