@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minecraft-world
+  labels:
+    app: minecraft
+  annotations:
+    kubesailEditorUid: c6561719-a4a8-4d0e-9773-041fcab39973
+    kubesail.com/template: loopDelicious/minecraft-raspberry-pi:v25
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
