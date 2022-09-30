@@ -27,9 +27,9 @@ spec:
             claimName: minecraft-world
       containers:
         - name: minecraft
-          image: joycelin79/cuberite
+          image: itzg/minecraft-server:latest
           tty: true
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: world
               mountPath: /app/cuberite/build-cuberite/Server/world
